@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: ./demo/libs/jpush-android-plugin-oppo-v4.6.6.jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/demo/libs/jpush-android-plugin-oppo-v4.6.6.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

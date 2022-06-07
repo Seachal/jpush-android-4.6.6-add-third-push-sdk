@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: ./demo/libs/push_sdk_v3.0.0.4_484.aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/push_sdk_v3.0.0.4_484.aar/faf8e68f6cae2a06345f171c74c856f8/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/push_sdk_v3.0.0.4_484.aar/faf8e68f6cae2a06345f171c74c856f8/jars/libs/pushOpenClient_v3.0.0.4_484_81c1f83_release.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/push_sdk_v3.0.0.4_484.aar/faf8e68f6cae2a06345f171c74c856f8/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/push_sdk_v3.0.0.4_484.aar/faf8e68f6cae2a06345f171c74c856f8/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

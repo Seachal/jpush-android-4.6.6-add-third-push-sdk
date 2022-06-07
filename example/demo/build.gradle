@@ -1,0 +1,69 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    defaultConfig {
+        applicationId "您应用的包名"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 464
+        versionName "4.6.4"
+        manifestPlaceholders = [
+                JPUSH_PKGNAME: applicationId,
+                JPUSH_APPKEY : "您应用的APPKEY",//值来自开发者平台取得的AppKey
+                JPUSH_CHANNEL: "default_developer",
+                MEIZU_APPKEY:"MZ-魅族的APPKEY",
+                MEIZU_APPID:"MZ-魅族的APPID",
+                XIAOMI_APPID:"MI-小米的APPID",
+                XIAOMI_APPKEY:"MI-小米的APPKEY",
+                OPPO_APPKEY:"OP-oppo的APPKEY",
+                OPPO_APPID:"OP-oppo的APPID",
+                OPPO_APPSECRET:"OP-oppo的APPSECRET",
+                VIVO_APPKEY:"vivo的APPKEY",
+                VIVO_APPID:"vivo的APPID"
+        ]
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    lintOptions {
+        abortOnError false
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar',"*.aar"], dir: 'libs')
+    // only for demo
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'org.conscrypt:conscrypt-android:2.2.1'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'com.hjq:toast:8.8'
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.4'
+    implementation 'com.tencent:mmkv-static:1.2.4'
+    implementation 'com.google.code.gson:gson:2.8.5'
+
+    //谷歌请按照厂商文档配置主 gradle 谷歌镜像依赖和添加 google-services.json 后再打开此依赖
+//    implementation 'com.google.firebase:firebase-messaging:22.0.0'
+    //华为请按照厂商文档配置主 gradle 华为镜像依赖和添加 agconnect-services.json 后再打开此依赖
+//    implementation 'com.huawei.hms:push:5.3.0.301'
+}
+//谷歌请按照厂商文档配置根 gradle 谷歌镜像依赖和添加 google-services.json 后再打开此插件依赖
+//apply plugin: 'com.google.gms.google-services'
+//华为请按照厂商文档配置根 gradle 华为镜像依赖和添加 agconnect-services.json 后再打开此插件依赖
+//apply plugin: 'com.huawei.agconnect'

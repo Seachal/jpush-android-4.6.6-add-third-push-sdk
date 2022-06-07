@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: ./demo/libs/jcore-android-3.2.4.jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/demo/libs/jcore-android-3.2.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

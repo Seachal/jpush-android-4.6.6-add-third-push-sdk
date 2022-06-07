@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.hjq:toast:8.8@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/toast-8.8.aar/4001381c13441ba6ef81cd73e4086f7a/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/toast-8.8.aar/4001381c13441ba6ef81cd73e4086f7a/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/toast-8.8.aar/4001381c13441ba6ef81cd73e4086f7a/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
